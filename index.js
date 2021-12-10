@@ -74,7 +74,7 @@ const gettertwo = function(){
 
 const loopie = function(){
     let lupNodes = document.getElementsByTagName("td")
-    for (lupNode of lupNodes ){
+    for (let lupNode of lupNodes ){
         return lupNode
     }
 }
@@ -82,7 +82,7 @@ const loopie = function(){
 //34
 
 const headChange = function(){
-    const changerNode = document.getElementsByTagName("h1")[0]
+    let changerNode = document.getElementsByTagName("h1")[0]
 
     changerNode.innerText = "yooooop, I'm changed!"
 }
@@ -90,7 +90,7 @@ const headChange = function(){
 //35
 
 const xtraRow = function(){
-    xtraNode = document.getElementsByTagName("table")[0]
+    const xtraNode = document.getElementsByTagName("table")[0]
 
     xtraNode.createElement("tr")
 }
@@ -99,11 +99,43 @@ const xtraRow = function(){
 //36
 
 const classAdd = function(){
-    addNodes = document.getElementsByTagName("tr")
-    for(addNode of addNodes){
+    let addNodes = document.getElementsByTagName("tr")
+    for(let addNode of addNodes){
         addNode.classList("test")
     }
 }
 
 //37
 
+const bgRed = function(){
+    let bgNodes = document.getElementsByTagName("a")
+    for(let bgNode of bgNodes){
+        bgNode.style.background = "black"
+    }
+}
+
+//38
+
+window.onload = function () {
+    console.log("Page Loaded")
+}
+
+//39
+
+const addItems = function(){
+    let addNodes = document.getElementsByTagName("ul")
+    for(let addALi of addNodes){
+        addALi.createElement("li")
+        addALi.innerText = "hi,Im testing"
+    }
+}
+//40
+
+const emptyLi = function(){
+    liNode =document.getElementsByTagName("li")[0]
+    liNode.innerText= ""
+}
+
+// -----------DOM-----------
+
+//41
