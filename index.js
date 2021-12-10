@@ -65,17 +65,45 @@ const getter = function(){
     let getterNode = document.getElementById("container")
 }
 
-//32 HAVE TO FINISH
+//32 not sure if i have to loop
 
 const gettertwo = function(){
-    for()
     let getterNode = document.getElementsByTagName("td")
 }
-
-//33 HAVE TO FINISH
+//33 HAVE TO FINISH. not good
 
 const loopie = function(){
-    for (){
-    let lupNode = document.getElementsByTagName("td")
+    let lupNodes = document.getElementsByTagName("td")
+    for (lupNode of lupNodes ){
+        return lupNode
     }
 }
+
+//34
+
+const headChange = function(){
+    const changerNode = document.getElementsByTagName("h1")[0]
+
+    changerNode.innerText = "yooooop, I'm changed!"
+}
+
+//35
+
+const xtraRow = function(){
+    xtraNode = document.getElementsByTagName("table")[0]
+
+    xtraNode.createElement("tr")
+}
+
+
+//36
+
+const classAdd = function(){
+    addNodes = document.getElementsByTagName("tr")
+    for(addNode of addNodes){
+        addNode.classList("test")
+    }
+}
+
+//37
+
