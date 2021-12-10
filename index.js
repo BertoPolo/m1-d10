@@ -15,6 +15,15 @@ console.log(bigGuy)
 
 const arry = ["hi","wassup","vamonoh","five","six","buenoooo","almost","finishin","aleluya"]
 
+console.log(arry)
 
+let bigArry=[]
+
+for(let i=0;i<100;i++){
+    let randomNumber =  Math.floor(Math.random()* 500)
+    return bigArry += randomNumber
+
+}
+console.log(bigArry)
 
 
