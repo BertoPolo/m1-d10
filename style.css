@@ -1,0 +1,42 @@
+body {
+  width: 100%;
+}
+
+table {
+  border-style: solid;
+  border-radius: 13%;
+}
+.kid {
+  width: 100px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: cornflowerblue;
+}
+
+.borderClass {
+  border-style: solid;
+}
+
+p {
+  margin: 3rem 3rem;
+}
+
+.sizeWeight {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.hidder {
+  visibility: hidden;
+}
+
+td {
+  border-style: solid;
+  border-color: green;
+}
