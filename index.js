@@ -21,7 +21,16 @@ const arry = ["hi","wassup","vamonoh","five","six","buenoooo","almost","finishin
 
 console.log(arry)
 
+
 //25
+
+for(let value of arry){
+    value++
+    console.log(value)
+}
+
+
+//26
 let bigArry=[]
 
 for(let i=0;i<100;i++){
@@ -29,14 +38,18 @@ for(let i=0;i<100;i++){
     return bigArry += randomNumber
 
 }
+
 console.log(bigArry)
+
+
+
 
 // you need to use [i], so every generate number willl insert in the bigArray.let arrayRandom26=[]
 // for(i=0; i<100; i++){
 //     arrayRandom26[i]=Math.floor(Math.random()*100)+1
-// }
+// } no estoy muy seguro de su respuesta
 
-//26
+//2
 
 
 let mainArray=[subArray1,subArray2]
@@ -44,9 +57,9 @@ let subArray1=[]
 let subArray2=[]
 
 
-//27
+//2
 
-//28
+//2
 
 
 // 29
@@ -54,6 +67,11 @@ let subArray2=[]
 const lengthSeeker = function(arr1,arr2){
     arr1.length() < arr2.length() ? arr2 : arr1
 }
+
+//30 
+
+
+//-------------
 
 
 //31 
@@ -133,6 +151,3 @@ const emptyLi = function(){
     liNode.innerText= ""
 }
 
-// -----------DOM-----------
-
-//41
