@@ -65,8 +65,17 @@ const getter = function(){
     let getterNode = document.getElementById("container")
 }
 
-//32
+//32 HAVE TO FINISH
 
 const gettertwo = function(){
+    for()
     let getterNode = document.getElementsByTagName("td")
+}
+
+//33 HAVE TO FINISH
+
+const loopie = function(){
+    for (){
+    let lupNode = document.getElementsByTagName("td")
+    }
 }
