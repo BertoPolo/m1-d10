@@ -1,10 +1,9 @@
+//21
 let x = "John"
 let y ="Doe"
 console.log(x +" <> "+ y)
 
-
-
-
+//22
 const bigGuy ={
     name: "Alejandro",
     surname: "Perrete",
@@ -12,22 +11,17 @@ const bigGuy ={
 }
 console.log(bigGuy)
 
-
-
-
+//23
 delete bigGuy.email
 
 console.log(bigGuy)
 
-
-
-
+//24
 const arry = ["hi","wassup","vamonoh","five","six","buenoooo","almost","finishin","aleluya"]
 
 console.log(arry)
 
-
-
+//25
 let bigArry=[]
 
 for(let i=0;i<100;i++){
@@ -42,7 +36,7 @@ console.log(bigArry)
 //     arrayRandom26[i]=Math.floor(Math.random()*100)+1
 // }
 
-
+//26
 
 
 let mainArray=[subArray1,subArray2]
@@ -50,6 +44,9 @@ let subArray1=[]
 let subArray2=[]
 
 
+//27
+
+//28
 
 
 // 29
