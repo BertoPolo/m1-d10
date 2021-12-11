@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        min-width: 140px;
+        /* border: 1px solid green*/
+      }
+
+      body {
+        max-width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      a {
+        color: coral;
+      }
+
+      .with-border {
+        border: 1px solid black;
+      }
+
+      table {
+        border-radius: 15px;
+      }
+
+      tr:nth-child(2) td:first-child {
+        border-top-left-radius: 1.5em;
+      }
+
+      tr:nth-child(2) td:last-child {
+        border-top-right-radius: 1.5em;
+      }
+
+      tr:last-child td:first-child {
+        border-bottom-left-radius: 1.5em;
+      }
+
+      tr:last-child td:last-child {
+        border-bottom-right-radius: 1.5em;
+      }
+
+      p {
+        margin-bottom: 35px;
+      }
+
+      .bigger-font {
+        font-size: 2em;
+        font-weight: 800;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+
+      .not-displayed {
+        display: none;
+      }
+
+      tr td:first-child {
+        border-left: 1px dotted red;
+      }
+
+      tr td:last-child {
+        border-right: 1px dotted red;
+      }
+
+      td {
+        border-bottom: 1px dotted red;
+        border-top: 1px dotted red;
+      }
+
+      .bg-red {
+        background-color: red;
+      }
+      .d-none {
+        display: none;
+      }
+      .border-pink {
+        border-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+
+    <ol>
+      <li class="bigger-font">first element</li>
+      <li>second element</li>
+      <li>third element</li>
+    </ol>
+
+    <hr />
+
+    <table>
+      <tbody>
+        <tr>
+          <th>Col 1</th>
+          <th>Col 2</th>
+          <th>Col 3</th>
+          <th>Col 4</th>
+          <th>Col 5</th>
+        </tr>
+
+        <tr>
+          <td>col 1 value</td>
+          <td>
+            <a href="https://google.com">
+              <img src="https://via.placeholder.com/100" />
+            </a>
+            <a href="https://google.com">I am a link</a>
+          </td>
+          <td>col 3 value</td>
+          <td colspan="2">col 4 value together col 5 value</td>
+        </tr>
+        <tr>
+          <td>col 1 value</td>
+          <td>
+            <a href="https://google.com">
+              <img class="hidden" src="https://via.placeholder.com/100" />
+            </a>
+          </td>
+          <td>col 3 value</td>
+          <td>col 4 value</td>
+          <td>col 5 value</td>
+        </tr>
+        <tr>
+          <td>col 1 value</td>
+          <td>
+            <a href="https://google.com">
+              <img src="https://via.placeholder.com/100" />
+            </a>
+          </td>
+          <td>col 3 value</td>
+          <td>col 4 value</td>
+          <td>col 5 value</td>
+        </tr>
+        <tr>
+          <td>col 1 value</td>
+          <td>
+            <a href="https://google.com">
+              <img src="https://via.placeholder.com/100" />
+            </a>
+          </td>
+          <td>col 3 value</td>
+          <td>col 4 value</td>
+          <td>col 5 value</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <p>This is a paragraph. And that's it.</p>
+
+      <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+      </ul>
+    </div>
+
+    <footer>
+      <div>Some information about the page creator:</div>
+      <div>My name is Luis and I'm your teaching assistant today! Cheers.</div>
+    </footer>
+    <script>
+      /*
+        HTML EXERCISES
+
+        1) Create a title for this webpage
+        2) Create a heading of your choice
+        3) Create an ordered list with some list items into it
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it into the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border assigned to it
+        15) Set the previously created table to have rounded corners
+        16) Add a margin between every paragraph
+        17) Create a class which changes font size and text weight when applied
+        18) Create a class to hide a piece of content
+        19) Add a green border to each <td>
+        20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+
+            */
+
+      // JS EXERCISES
+
+      // 21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"
+      let x = "John";
+      let y = "Doe";
+
+      console.log(x + " <> " + y);
+      // 22) Create an object with properties such name, surname, email
+      const person = {
+        name: "Luis Antonio",
+        surname: "Canettoli OrdoÃ±ez",
+        email: "hello@luisanton.io",
+      };
+      // 23) Delete the email property from the previously created object
+      delete person.email;
+      // 24) Create an array with 10 strings in it
+      let arrayOfStrings = [];
+
+      for (let i = 0; i < 10; i++) {
+        arrayOfStrings.push("New value: " + i);
+      }
+      // 25) Print in the console every string from the previous array
+      for (let i = 0; i < arrayOfStrings.length; i++) {
+        console.log(arrayOfStrings[i]);
+      }
+      // 26) Create an array with 100 random numbers in it
+      let arrayOfNumbers = [];
+      for (let i = 0; i < 100; i++) {
+        arrayOfNumbers.push(Math.floor(Math.random() * 100));
+      }
+      // 27) Write a function to get the maximum and minimum values from the previously created array
+      const getMaxMin = function (numbers) {
+        let max = numbers[0];
+        let min = numbers[0];
+        for (let i = 0; i < numbers.length - 1; i++) {
+          if (numbers[i] > max) {
+            max = numbers[i];
+          }
+
+          if (numbers[i] < min) {
+            min = numbers[i];
+          }
+        }
+        // for (let i = 0; i < numbers.length - 1; i++) {
+        //   max = numbers[i] > max ? numbers[i] : max;
+        //   min = numbers[i] < min ? numbers[i] : min;
+        // }
+        return { max, min };
+      };
+      // 28) Create an array of arrays, in which every array has 10 random numbers
+      let arrayOfArrays = [];
+
+      for (let i = 0; i < 10; i++) {
+        let innerArray = [];
+        for (let j = 0; j < 10; j++) {
+          innerArray.push(Math.round(Math.random() * 10));
+        }
+        arrayOfArrays.push(innerArray);
+      }
+      // 29) Create a function that gets 2 arrays as parameters and returns the longest one
+      const returnLargest = function (array1, array2) {
+        if (array1.length > array2.length) {
+          return array1;
+        } else {
+          return array2;
+        }
+        // return array1.length >= array2.length ? array1 : array2;
+      };
+      // 30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
+      const returnLargestSum = function (array1, array2) {
+        let sum1 = 0;
+
+        for (let i = 0; i < array1.length; i++) {
+          sum1 = sum1 + array1[i];
+          //   sum1 += array1[i];
+        }
+
+        let sum2 = 0;
+
+        for (let j = 0; j < array2.length; j++) {
+          sum2 = sum2 + array2[j];
+          //   sum2 += array2[j];
+        }
+
+        if (sum1 >= sum2) {
+          return sum1;
+        } else {
+          return sum2;
+        }
+        // return sum1 >= sum2 ? sum1 : sum2;
+      };
+
+      // DOM EXERCISES
+
+      // 31) Get the element with an id of "container" from the page
+      const container = document.getElementById("container");
+      // 32) Get every <td> element from the page
+      const tds = document.querySelectorAll("td");
+      // 33) Use a loop for printing the text inside of every <td> element in the page
+      for (let i = 0; i < tds.length; i++) {
+        tds[i].innerText = "text";
+      }
+      // 34) Write a function to change the heading of the page
+      const changeH1 = function (content) {
+        const h1 = document.querySelector("h1");
+        h1.innerText = content;
+      };
+      changeH1("new text");
+      // 35) Write a function to add an extra row to the table
+      const addRow = function () {
+        const tbody = document.querySelector("tbody");
+        const tr = document.createElement("tr");
+        for (let i = 0; i < 5; i++) {
+          const td = document.createElement("td");
+          td.innerText = i + 1;
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      };
+      addRow();
+      // 36) Write a function to add a class of "test" to each row in the table
+      const addClassToRow = function () {
+        const trs = document.querySelectorAll("tr");
+        for (let j = 0; j < trs.length; j++) {
+          trs[j].classList.add("test");
+        }
+      };
+      // 37) Write a function to add a red background to every link in the page
+      const addRedBg = function () {
+        const links = document.querySelectorAll("a");
+        for (let l = 0; l < links.length; l++) {
+          links[l].classList.add("bg-red");
+        }
+      };
+      addRedBg();
+      // 38) Console log "Page loaded" when the page is correctly loaded
+      window.onload = function () {
+        console.log("Page loaded");
+      };
+      // 39) Write a function to add new items to a unordered list
+      const addLi = function () {
+        const ul = document.querySelector("ul");
+        const li = document.createElement("li");
+        li.innerText = "new list item";
+        ul.appendChild(li);
+      };
+      addLi();
+      // 40) Write a function to empty a list
+      const emptyList = function () {
+        const ul = document.querySelector("ul");
+        ul.innerHTML = "";
+      };
+      emptyList();
+
+      // EXTRA EXERCISES
+
+      // 41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+      const alertUrl = function () {
+        const links = document.querySelectorAll("a");
+        for (let m = 0; m < links.length; m++) {
+          links[m].onmouseenter = function (e) {
+            alert(e.target.href);
+          };
+        }
+      };
+      alertUrl();
+      // 42) Create a button that will hide every image on the page when clicked
+      const hideImages = function () {
+        const btn = document.createElement("button");
+        btn.innerText = "Hide images";
+        btn.onclick = function () {
+          const imgs = document.querySelectorAll("img");
+          imgs.forEach((img) => {
+            img.classList.add("d-none");
+          });
+        };
+        const body = document.querySelector("body");
+        body.appendChild(btn);
+      };
+      hideImages();
+      // 43) Create a button that will hide or show the table on the page when clicked
+      const toggleTable = function () {
+        const btn = document.createElement("button");
+        btn.innerText = "Toggle table";
+        btn.onclick = function () {
+          const table = document.querySelector("table");
+          table.classList.toggle("d-none");
+        };
+
+        const body = document.querySelector("body");
+        body.appendChild(btn);
+      };
+      toggleTable();
+      // 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+      const sumNumbers = function () {
+        const tds = document.querySelectorAll("td");
+        let sum = 0;
+        tds.forEach((td) => {
+          const toNumber = parseInt(td.innerText);
+          const isNotNumeric = isNaN(toNumber);
+          if (!isNotNumeric) {
+            sum += toNumber;
+          }
+        });
+        console.log(sum);
+      };
+      sumNumbers();
+      // 45) Delete the last letter from the heading each time the user clicks on it
+      const deleteLastChar = function () {
+        const h1 = document.querySelector("h1");
+        h1.onclick = function (e) {
+          h1.innerText = h1.innerText.substring(0, h1.innerText.length - 1);
+        };
+      };
+      deleteLastChar();
+      // 46) Change the background color of a <td> if the user clicks on it
+      const changeTdBg = function () {
+        const tds = document.querySelectorAll("td");
+        tds.forEach((td) => {
+          td.onclick = function (e) {
+            e.target.classList.toggle("bg-red");
+          };
+        });
+      };
+      changeTdBg();
+      // 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+      const deleteRandom = function () {
+        const btn = document.createElement("button");
+        btn.innerText = "Delete random";
+        btn.onclick = function () {
+          const tds = document.querySelectorAll("td");
+          const random = Math.floor(Math.random() * tds.length);
+          tds[random].remove();
+        };
+        const body = document.querySelector("body");
+        body.appendChild(btn);
+      };
+      deleteRandom();
+      // 48) Add automatically a pink border to a cell when the mouse hovers it
+      const addPinkBorder = function () {
+        const cells = document.querySelectorAll("td");
+        cells.forEach((td) => {
+          td.onmouseenter = function (e) {
+            e.target.classList.add("border-pink");
+          };
+          td.onmouseleave = function (e) {
+            e.target.classList.remove("border-pink");
+          };
+        });
+      };
+      addPinkBorder();
+      // 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+      const createTable = function () {
+        const body = document.querySelector("body");
+        const table = document.createElement("table");
+        const tbody = document.createElement("tbody");
+        table.appendChild(tbody);
+        body.appendChild(table);
+        for (let i = 0; i < 5; i++) {
+          const tr = document.createElement("tr");
+          tbody.appendChild(tr);
+          for (let j = 0; j < 3; j++) {
+            if (i === 0) {
+              const th = document.createElement("th");
+              th.innerText = "Heading " + (j + 1);
+              tr.appendChild(th);
+            } else {
+              const td = document.createElement("td");
+              td.innerText = `Row ${i} Col ${j + 1}`;
+              tr.appendChild(td);
+            }
+          }
+        }
+      };
+      createTable();
+      // 50) Write a function to remove the last table from the page
+      const removeTable = function () {
+        const table = document.querySelectorAll("table")[1];
+        table.remove();
+      };
+      removeTable();
+      /* WHEN YOU ARE FINISHED
+       Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+      */
+    </script>
+  </body>
+</html>
