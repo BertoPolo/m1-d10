@@ -151,3 +151,11 @@ const emptyLi = function(){
     liNode.innerText= ""
 }
 
+//41
+
+const hoverLink = function(){
+const hoverNode = document.getElementsByTagName("a")
+for(let i =0;i<hoverNode.length;i++){
+
+}
+}
