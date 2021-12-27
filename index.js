@@ -52,9 +52,9 @@ console.log(bigArry)
 //2
 
 
-let mainArray=[subArray1,subArray2]
+/* let mainArray=[subArray1,subArray2]
 let subArray1=[]
-let subArray2=[]
+let subArray2=[] */
 
 
 //2
@@ -133,6 +133,7 @@ const bgRed = function(){
 
 window.onload = function () {
     console.log("Page Loaded")
+    hoverLink()
 }
 
 //39
@@ -151,11 +152,17 @@ const emptyLi = function(){
     liNode.innerText= ""
 }
 
-//41
+//41 Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
 
 const hoverLink = function(){
-const hoverNode = document.getElementsByTagName("a")
+const hoverNode = document.getElementById("aa")
 for(let i =0;i<hoverNode.length;i++){
+    hoverNode.addEventListener("mouseover", function(event){
+        event.target.style.color = "orange"
+        })
 
 }
 }
+
+
+
