@@ -91,41 +91,45 @@ const lengthSeeker = function(arr1,arr2){
 console.log("exercice 30")
 
 let biggerSumArray = function(arr1,arr2){
-    let arr1Total
-    let arr2Total
+    let arr1Total=0
+    let arr2Total=0
 
     for(let i=0;i<arr1.length;i++){
-        arr1Total += arr2[i] 
+        arr1Total += arr1[i] 
     }
 
     for(let i=0;i<arr2.length;i++){
         arr2Total += arr2[i] 
     }
-    return arr1Total>arr2Total ? arr1Total : arr2Total
+    return arr1Total>arr2Total ? "number one "+arr1Total : "number two "+arr2Total
 }
-biggerSumArray(subArray1,subArray2)
-//-------------
+console.log(biggerSumArray(subArray1,subArray2))
 
 
-// //31 
 
-// const getter = function(){
-//     let getterNode = document.getElementById("container")
-// }
+//31 Get the element with an id of "container" from the page
 
-// //32 not sure if i have to loop
+const getter = function(){
+    let getterNode = document.getElementById("container")
+}
+getter()
 
-// const gettertwo = function(){
-//     let getterNode = document.getElementsByTagName("td")
-// }
-// //33 HAVE TO FINISH. not good
+//32 Get every <td> element from the page 
 
-// const loopie = function(){
-//     let lupNodes = document.getElementsByTagName("td")
-//     for (let lupNode of lupNodes ){
-//         return lupNode
-//     }
-// }
+const getterTd = function(){
+    let getterNode = document.getElementsByTagName("td")
+}
+getterTd()
+
+//33 Use a loop for printing the text inside of every <td> element in the page
+
+const tdLoopie = function(){
+    let lupNodes = document.getElementsByTagName("td")
+    for (let i =0;i<lupNodes.length;i++){
+        return lupNodes[i]
+    }
+    }
+
 
 // //34
 
@@ -186,7 +190,8 @@ biggerSumArray(subArray1,subArray2)
 // }
 
 //41 Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
-    const clikiNode = document.querySelectorAll("a")
+ /*    const clicker = function(){    
+const clikiNode = document.querySelectorAll("a")
 for(let i=0;i<clikiNode.length;i++){
 
     clikiNode[i].addEventListener("mouseover",function(){
@@ -194,40 +199,41 @@ for(let i=0;i<clikiNode.length;i++){
         
     })
 }
-
+}
+clicker() */
 //42) Create a button that will hide every image on the page when clicked
 
-const footie = document.getElementsByTagName("footer")[0]
-const bottie = document.createElement("button")
-footie.appendChild(bottie)
-bottie.innerText="exercise 42"
+// const footie = document.getElementsByTagName("footer")[0]
+// const bottie = document.createElement("button")
+// footie.appendChild(bottie)
+// bottie.innerText="exercise 42"
 
-bottie.addEventListener("click",function(){
-    const imgsNode = document.querySelectorAll("img")
-    for(let i = 0;i<imgsNode.length;i++){
-        imgsNode[i].classList("hidder")
-    }
-})
+// bottie.addEventListener("click",function(){
+//     const imgsNode = document.querySelectorAll("img")
+//     for(let i = 0;i<imgsNode.length;i++){
+//         imgsNode[i].classList("hidder")
+//     }
+// })
 
-//43) Create a button that will hide or show the table on the page when clicked
+// //43) Create a button that will hide or show the table on the page when clicked
 
-const btn43 = document.createElement("button")
-btn43.innerText="exercise 43"
-footie.appendChild(btn43)
+// const btn43 = document.createElement("button")
+// btn43.innerText="exercise 43"
+// footie.appendChild(btn43)
 
-const tbody = document.getElementsByTagName("table")[0]
+// const tbody = document.getElementsByTagName("table")[0]
 
-btn43.addEventListener("click",function(){
-    tbody.classList.toggle("hidder")
-})
+// btn43.addEventListener("click",function(){
+//     tbody.classList.toggle("hidder")
+// })
 
-//44) Write a function for calculating the sum of every number 
-//    inside all the table cells (if their content is numeric)
+// //44) Write a function for calculating the sum of every number 
+// //    inside all the table cells (if their content is numeric)
 
-const calculator = function(){
+// const calculator = function(){
 
 
-}
+// }
 
 
 
