@@ -16,17 +16,18 @@ delete bigGuy.email
 
 console.log(bigGuy)
 
+
+
 //24
 const arry = ["hi","wassup","vamonoh","five","six","buenoooo","almost","finishin","aleluya"]
 
 console.log(arry)
 
 
-//25
+//25 Print in the console every string from the previous array
 
-for(let value of arry){
-    value++
-    console.log(value)
+for(let i=0;i<arry.length;i++){
+    console.log(arry[i])
 }
 
 
@@ -249,7 +250,32 @@ const tdCalculator = function(){
 
 const tdNodes= document.getElementsByClassName("td")
 let totalSum=0
+for(let i = 0;i<tdNodes.length;i++){
+    const toNumber = parseInt(td.innerText)
+    const isNotNumeric = isNaN(toNumber);
+          if (!isNotNumeric) {
+            totalSum += toNumber;
+          }
 }
+}
+tdCalculator()
+
+//45) Delete the last letter from the heading each time the user clicks on it
+
+/* const h1Node = document.getElementsByTagName("h1")[0]
+const btn45 = document.createElement("button")
+btn45.innerText="exercise 45"
+footie.appendChild(btn45)
 
 
+btn45.addEventListener("click",function(){
+let splitter = h1Node.split("")
+let removeTheLast = splitter.pop()
+let rejoiner = removeTheLast.join()
+}) */
 
+//46) Change the background color of a <td> if the user clicks on it
+
+const tdBackChange = function(){
+    const tdNodes
+}
