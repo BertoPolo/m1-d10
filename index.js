@@ -124,73 +124,85 @@ getterTd()
 //33 Use a loop for printing the text inside of every <td> element in the page
 
 const tdLoopie = function(){
+    
     let lupNodes = document.getElementsByTagName("td")
     for (let i =0;i<lupNodes.length;i++){
-        return lupNodes[i]
+        lupNodes.innerText="hello helloo ex33"
+        //console.log( lupNodes[i]) its not appended to anywhere
     }
-    }
+    } 
+tdLoopie()
 
+//34) Write a function to change the heading of the page
 
-// //34
+const headChange = function(){
+    let changerNode = document.getElementsByTagName("h1")[0]
 
-// const headChange = function(){
-//     let changerNode = document.getElementsByTagName("h1")[0]
+    changerNode.innerText = "yooooop, I'm changed!"
 
-//     changerNode.innerText = "yooooop, I'm changed!"
-// }
+}
+headChange()
 
-// //35
+//35 Write a function to add an extra row to the table
 
-// const xtraRow = function(){
-//     const xtraNode = document.getElementsByTagName("table")[0]
+const xtraRow = function(){
+    const xtraNode = document.getElementsByTagName("table")[0]
 
-//     xtraNode.createElement("tr")
-// }
-
-
-// //36
-
-// const classAdd = function(){
-//     let addNodes = document.getElementsByTagName("tr")
-//     for(let addNode of addNodes){
-//         addNode.classList("test")
-//     }
-// }
-
-// //37
-
-// const bgRed = function(){
-//     let bgNodes = document.getElementsByTagName("a")
-//     for(let bgNode of bgNodes){
-//         bgNode.style.background = "black"
-//     }
-// }
-
-// //38
-
-// window.onload = function() {
-//     console.log("Page Loaded")
+    const newTr = document.createElement("tr")
     
-// }
+    xtraNode.appendChild(newTr)
+}
+xtraRow()
 
-// //39
+//36 Write a function to add a class of "test" to each row in the table
 
-// const addItems = function(){
-//     let addNodes = document.getElementsByTagName("ul")
-//     for(let addALi of addNodes){
-//         addALi.createElement("li")
-//         addALi.innerText = "hi,Im testing"
-//     }
-// }
-// //40
+const classAdd = function(){
+    let addNodes = document.getElementsByTagName("tr")
+    for(let i=0;i<addNodes.length;i++){
+        addNodes[i].classList.add("test")
+    }
+}
 
-// const emptyLi = function(){
-//     liNode =document.getElementsByTagName("li")[0]
-//     liNode.innerText= ""
-// }
+classAdd()
+
+//37 Write a function to add a red background to every link in the page
+
+const bgRed = function(){
+    let bgNodes = document.getElementsByTagName("a")
+    for(let bgNode of bgNodes){
+        bgNode.style.background = "red"
+    }
+}
+bgRed()
+
+//38 Console log "Page loaded" when the page is correctly loaded
+
+window.onload = function() {
+    console.log("Page Loaded")
+    
+}
+
+//39 Write a function to add new items to a unordered list
+
+const addItems = function(){
+    let addNodes = document.querySelector("ol")
+        let theLi = document.createElement("li")
+        theLi.innerText = "hi,Im testing"
+        addNodes.appendChild(theLi)
+    
+}
+addItems()
+
+//40
+
+const emptyLi = function(){
+    liNode =document.getElementsByTagName("li")[0]
+    liNode.innerText= ""
+}
+emptyLi()
 
 //41 Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
- /*    const clicker = function(){    
+    const clicker = function(){    
 const clikiNode = document.querySelectorAll("a")
 for(let i=0;i<clikiNode.length;i++){
 
@@ -200,40 +212,43 @@ for(let i=0;i<clikiNode.length;i++){
     })
 }
 }
-clicker() */
-//42) Create a button that will hide every image on the page when clicked
-
-// const footie = document.getElementsByTagName("footer")[0]
-// const bottie = document.createElement("button")
-// footie.appendChild(bottie)
-// bottie.innerText="exercise 42"
-
-// bottie.addEventListener("click",function(){
-//     const imgsNode = document.querySelectorAll("img")
-//     for(let i = 0;i<imgsNode.length;i++){
-//         imgsNode[i].classList("hidder")
-//     }
-// })
-
-// //43) Create a button that will hide or show the table on the page when clicked
-
-// const btn43 = document.createElement("button")
-// btn43.innerText="exercise 43"
-// footie.appendChild(btn43)
-
-// const tbody = document.getElementsByTagName("table")[0]
-
-// btn43.addEventListener("click",function(){
-//     tbody.classList.toggle("hidder")
-// })
-
-// //44) Write a function for calculating the sum of every number 
-// //    inside all the table cells (if their content is numeric)
-
-// const calculator = function(){
+clicker()
 
 
-// }
+// 42) Create a button that will hide every image on the page when clicked
+
+const footie = document.getElementsByTagName("footer")[0]
+const bottie = document.createElement("button")
+footie.appendChild(bottie)
+bottie.innerText="exercise 42"
+
+bottie.addEventListener("click",function(){
+    const imgsNode = document.getElementsByTagName("img")
+    for(let i = 0;i<imgsNode.length;i++){
+        imgsNode[i].classList.toggle("hidder")
+    }
+})
+
+//43) Create a button that will hide or show the table on the page when clicked
+
+const btn43 = document.createElement("button")
+btn43.innerText="exercise 43"
+footie.appendChild(btn43)
+
+const tbody = document.getElementsByTagName("table")[0]
+
+btn43.addEventListener("click",function(){
+    tbody.classList.toggle("hidder")
+})
+
+
+//44) Write a function for calculating the sum of every number 
+//    inside all the table cells (if their content is numeric)
+
+const calculator = function(){
+
+
+}
 
 
 
