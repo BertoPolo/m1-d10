@@ -245,9 +245,10 @@ btn43.addEventListener("click",function(){
 //44) Write a function for calculating the sum of every number 
 //    inside all the table cells (if their content is numeric)
 
-const calculator = function(){
+const tdCalculator = function(){
 
-
+const tdNodes= document.getElementsByClassName("td")
+let totalSum=0
 }
 
 
