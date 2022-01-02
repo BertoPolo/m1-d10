@@ -277,5 +277,27 @@ let rejoiner = removeTheLast.join()
 //46) Change the background color of a <td> if the user clicks on it
 
 const tdBackChange = function(){
-    const tdNodes
+    const tdNodes = document.getElementsByTagName("td")
+    for(let i=0;i<tdNodes.length;i++){
+        tdNodes[i].addEventListener("click",function(e){
+            let selected = e.target
+            selected.style.background= "black"
+        })
+    }
 }
+tdBackChange()
+
+//47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+
+const tableNode = document.getElementById("theTable")
+const btn47 =  document.createElement("button")
+tableNode.appendChild(btn47)
+btn47.innerText="btn47"
+const tdNodes = document.getElementsByTagName("td")
+
+btn47.addEventListener("click",function(){
+    randomIndex = Math.floor(Math.random()*tdNodes.length)
+    tdNodes[randomIndex].remove()
+})
+
+//48) Add automatically a pink border to a cell when the mouse hovers it
