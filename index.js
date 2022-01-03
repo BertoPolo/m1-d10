@@ -301,3 +301,14 @@ btn47.addEventListener("click",function(){
 })
 
 //48) Add automatically a pink border to a cell when the mouse hovers it
+
+const pinkBorder = function(){
+    const tdNodes = document.getElementsByTagName("td")
+
+    for(let i=0;i<tdNodes.length;i++){
+        tdNodes[i].addEventListener("mouseover",function(e){
+            tdNodes[i].classList.toggle("pinkBorder")
+        })
+    }
+}
+pinkBorder()
