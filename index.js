@@ -340,3 +340,10 @@ const table4x3Creation = function(){
     })
 }
 table4x3Creation()
+
+//50) Write a function to remove the last table from the page
+
+const tableRemover = function(){
+   const lastTableNode= document.getElementsByTagName("table")
+   lastTableNode[lastTableNode.length-1].remove()
+}
