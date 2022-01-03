@@ -312,3 +312,31 @@ const pinkBorder = function(){
     }
 }
 pinkBorder()
+
+//49) Write a function to create a table with 4 rows and 3 columns programmatically 
+      //and add it to the bottom of the page
+
+
+const table4x3Creation = function(){
+    const buttonToCall = document.createElement("button")
+    buttonToCall.innerText="table cration"
+    const placeToBe = document.getElementById("newTables")
+    placeToBe.appendChild(buttonToCall)
+
+        buttonToCall.addEventListener("click",function(){
+        const newTable = document.createElement("table")
+        placeToBe.appendChild(newTable)
+    
+        for (let i = 0; i < 4; i++) {
+            const tRow = document.createElement("tr") 
+            newTable.appendChild(tRow)
+            
+            for(let i=0;i<3;i++){
+            const tCol = document.createElement("td")
+            tRow.appendChild(tCol)
+            tCol.innerText = "hello"
+            }
+        }
+    })
+}
+table4x3Creation()
